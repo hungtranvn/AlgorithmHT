@@ -89,7 +89,7 @@ Open Source and User Focused |:heartbeat:|
     |com_brand| supports hundreds of organizations with product and internal documentation.
 
 .. _Read the docs: https://readthedocs.org/
-
+git@github.com:readthedocs/readthedocs.org.git
 You can find out more about our all the :doc:`features </reference/features>` in these pages.
 
 First steps
