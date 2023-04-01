@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Structures &mdash; Algorithms 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Advanced Design And Analysis Techniques" href="advancedDesignAndAnalysisTechniques.html" />
+    <link rel="prev" title="Sorting And Order Statics" href="sortingAndOrderStatics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Algorithms
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="foundations.html">Foundations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sortingAndOrderStatics.html">Sorting And Order Statics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#elementary-data-structure">Elementary Data Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stacks-and-queues">Stacks and queues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linked-lists">Linked lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implementing-pointers-and-objects">Implementing pointers and objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#representing-rooted-trees">Representing rooted trees</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hash-tables">Hash Tables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#direct-address-tables">Direct address tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Hash tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hash-functions">Hash functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-addressing">Open addressing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#perfect-hashing">Perfect hashing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#binary-search-trees">Binary Search Trees</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-binary-search-tree">What is binary search tree?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#query-a-binary-search-tree">Query a binary search tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#insertion-and-deletion">Insertion and deletion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#randomly-built-binary-search-trees">Randomly built binary search trees</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#read-black-tree">Read-Black Tree</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#properties-of-red-black-trees">Properties of red-black trees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rotations">Rotations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#insertion">Insertion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deletions">Deletions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#augmenting-data-structures">Augmenting Data Structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-orer-statistics">Dynamic orer statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-augmenting-a-data-structure">How to augmenting a data structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interval-trees">Interval trees</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advancedDesignAndAnalysisTechniques.html">Advanced Design And Analysis Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advancedDataStructures.html">Advanced Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphAlgorithms.html">Graph Algorithms</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Algorithms</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Structures</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/dataStructures.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-structures">
+<h1>Data Structures<a class="headerlink" href="#data-structures" title="Permalink to this heading"></a></h1>
+<section id="elementary-data-structure">
+<h2>Elementary Data Structure<a class="headerlink" href="#elementary-data-structure" title="Permalink to this heading"></a></h2>
+<section id="stacks-and-queues">
+<h3>Stacks and queues<a class="headerlink" href="#stacks-and-queues" title="Permalink to this heading"></a></h3>
+</section>
+<section id="linked-lists">
+<h3>Linked lists<a class="headerlink" href="#linked-lists" title="Permalink to this heading"></a></h3>
+</section>
+<section id="implementing-pointers-and-objects">
+<h3>Implementing pointers and objects<a class="headerlink" href="#implementing-pointers-and-objects" title="Permalink to this heading"></a></h3>
+</section>
+<section id="representing-rooted-trees">
+<h3>Representing rooted trees<a class="headerlink" href="#representing-rooted-trees" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="hash-tables">
+<h2>Hash Tables<a class="headerlink" href="#hash-tables" title="Permalink to this heading"></a></h2>
+<section id="direct-address-tables">
+<h3>Direct address tables<a class="headerlink" href="#direct-address-tables" title="Permalink to this heading"></a></h3>
+</section>
+<section id="id1">
+<h3>Hash tables<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+</section>
+<section id="hash-functions">
+<h3>Hash functions<a class="headerlink" href="#hash-functions" title="Permalink to this heading"></a></h3>
+</section>
+<section id="open-addressing">
+<h3>Open addressing<a class="headerlink" href="#open-addressing" title="Permalink to this heading"></a></h3>
+</section>
+<section id="perfect-hashing">
+<h3>Perfect hashing<a class="headerlink" href="#perfect-hashing" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="binary-search-trees">
+<h2>Binary Search Trees<a class="headerlink" href="#binary-search-trees" title="Permalink to this heading"></a></h2>
+<section id="what-is-binary-search-tree">
+<h3>What is binary search tree?<a class="headerlink" href="#what-is-binary-search-tree" title="Permalink to this heading"></a></h3>
+</section>
+<section id="query-a-binary-search-tree">
+<h3>Query a binary search tree<a class="headerlink" href="#query-a-binary-search-tree" title="Permalink to this heading"></a></h3>
+</section>
+<section id="insertion-and-deletion">
+<h3>Insertion and deletion<a class="headerlink" href="#insertion-and-deletion" title="Permalink to this heading"></a></h3>
+</section>
+<section id="randomly-built-binary-search-trees">
+<h3>Randomly built binary search trees<a class="headerlink" href="#randomly-built-binary-search-trees" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="read-black-tree">
+<h2>Read-Black Tree<a class="headerlink" href="#read-black-tree" title="Permalink to this heading"></a></h2>
+<section id="properties-of-red-black-trees">
+<h3>Properties of red-black trees<a class="headerlink" href="#properties-of-red-black-trees" title="Permalink to this heading"></a></h3>
+</section>
+<section id="rotations">
+<h3>Rotations<a class="headerlink" href="#rotations" title="Permalink to this heading"></a></h3>
+</section>
+<section id="insertion">
+<h3>Insertion<a class="headerlink" href="#insertion" title="Permalink to this heading"></a></h3>
+</section>
+<section id="deletions">
+<h3>Deletions<a class="headerlink" href="#deletions" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="augmenting-data-structures">
+<h2>Augmenting Data Structures<a class="headerlink" href="#augmenting-data-structures" title="Permalink to this heading"></a></h2>
+<section id="dynamic-orer-statistics">
+<h3>Dynamic orer statistics<a class="headerlink" href="#dynamic-orer-statistics" title="Permalink to this heading"></a></h3>
+</section>
+<section id="how-to-augmenting-a-data-structure">
+<h3>How to augmenting a data structure<a class="headerlink" href="#how-to-augmenting-a-data-structure" title="Permalink to this heading"></a></h3>
+</section>
+<section id="interval-trees">
+<h3>Interval trees<a class="headerlink" href="#interval-trees" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sortingAndOrderStatics.html" class="btn btn-neutral float-left" title="Sorting And Order Statics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="advancedDesignAndAnalysisTechniques.html" class="btn btn-neutral float-right" title="Advanced Design And Analysis Techniques" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, HungTran.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

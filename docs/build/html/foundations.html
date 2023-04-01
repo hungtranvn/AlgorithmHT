@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundations &mdash; Algorithms 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sorting And Order Statics" href="sortingAndOrderStatics.html" />
+    <link rel="prev" title="Welcome to Algorithms’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Algorithms
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Foundations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-role-of-algorithms-in-computing">The Role of Algorithms in Computing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#algorithms">Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#algorithms-as-a-technology">Algorithms as a technology</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#insertion-sort">Insertion Sort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analyzing-algorithms">Analyzing Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#designing-algorithms">Designing Algorithms</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#growth-of-function">Growth of Function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#asymptotic-notation">Asymptotic Notation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#standard-notations-and-common-functions">Standard Notations and Common Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#divide-and-conquer">Divide and Conquer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-maximum-subarray-problem">The maximum subarray problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strassen-s-algorithm-for-matrix-multiplication">Strassen’s algorithm for matrix multiplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-substitution-method-for-solving-recurrences">The substitution method for solving recurrences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-recurrence-tree-method-for-solving-recurrences">The recurrence-tree method for solving recurrences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-master-method-for-solving-recurrences">The master method for solving recurrences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proof-of-the-master-theorem">Proof of the master theorem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#probabilistic-analysis-and-randomized-algorithms">Probabilistic Analysis and Randomized Algorithms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-hiring-problem">The hiring problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#indicator-random-variables">Indicator random variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#randomized-algorithms">Randomized algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#probabilistic-analysis-and-further-uses-of-indicator-random-variables">Probabilistic analysis and further uses of indicator random variables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sortingAndOrderStatics.html">Sorting And Order Statics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataStructures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advancedDesignAndAnalysisTechniques.html">Advanced Design And Analysis Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advancedDataStructures.html">Advanced Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphAlgorithms.html">Graph Algorithms</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Algorithms</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Foundations</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/foundations.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="foundations">
+<h1>Foundations<a class="headerlink" href="#foundations" title="Permalink to this heading"></a></h1>
+<section id="the-role-of-algorithms-in-computing">
+<h2>The Role of Algorithms in Computing<a class="headerlink" href="#the-role-of-algorithms-in-computing" title="Permalink to this heading"></a></h2>
+<section id="algorithms">
+<h3>Algorithms<a class="headerlink" href="#algorithms" title="Permalink to this heading"></a></h3>
+<p>An algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output.
+An algorithm is thus a sequence of computational steps that transform the input into output.</p>
+</section>
+<section id="algorithms-as-a-technology">
+<h3>Algorithms as a technology<a class="headerlink" href="#algorithms-as-a-technology" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
+<section id="insertion-sort">
+<h3>Insertion Sort<a class="headerlink" href="#insertion-sort" title="Permalink to this heading"></a></h3>
+</section>
+<section id="analyzing-algorithms">
+<h3>Analyzing Algorithms<a class="headerlink" href="#analyzing-algorithms" title="Permalink to this heading"></a></h3>
+</section>
+<section id="designing-algorithms">
+<h3>Designing Algorithms<a class="headerlink" href="#designing-algorithms" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="growth-of-function">
+<h2>Growth of Function<a class="headerlink" href="#growth-of-function" title="Permalink to this heading"></a></h2>
+<section id="asymptotic-notation">
+<h3>Asymptotic Notation<a class="headerlink" href="#asymptotic-notation" title="Permalink to this heading"></a></h3>
+</section>
+<section id="standard-notations-and-common-functions">
+<h3>Standard Notations and Common Functions<a class="headerlink" href="#standard-notations-and-common-functions" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="divide-and-conquer">
+<h2>Divide and Conquer<a class="headerlink" href="#divide-and-conquer" title="Permalink to this heading"></a></h2>
+<section id="the-maximum-subarray-problem">
+<h3>The maximum subarray problem<a class="headerlink" href="#the-maximum-subarray-problem" title="Permalink to this heading"></a></h3>
+</section>
+<section id="strassen-s-algorithm-for-matrix-multiplication">
+<h3>Strassen’s algorithm for matrix multiplication<a class="headerlink" href="#strassen-s-algorithm-for-matrix-multiplication" title="Permalink to this heading"></a></h3>
+</section>
+<section id="the-substitution-method-for-solving-recurrences">
+<h3>The substitution method for solving recurrences<a class="headerlink" href="#the-substitution-method-for-solving-recurrences" title="Permalink to this heading"></a></h3>
+</section>
+<section id="the-recurrence-tree-method-for-solving-recurrences">
+<h3>The recurrence-tree method for solving recurrences<a class="headerlink" href="#the-recurrence-tree-method-for-solving-recurrences" title="Permalink to this heading"></a></h3>
+</section>
+<section id="the-master-method-for-solving-recurrences">
+<h3>The master method for solving recurrences<a class="headerlink" href="#the-master-method-for-solving-recurrences" title="Permalink to this heading"></a></h3>
+</section>
+<section id="proof-of-the-master-theorem">
+<h3>Proof of the master theorem<a class="headerlink" href="#proof-of-the-master-theorem" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="probabilistic-analysis-and-randomized-algorithms">
+<h2>Probabilistic Analysis and Randomized Algorithms<a class="headerlink" href="#probabilistic-analysis-and-randomized-algorithms" title="Permalink to this heading"></a></h2>
+<section id="the-hiring-problem">
+<h3>The hiring problem<a class="headerlink" href="#the-hiring-problem" title="Permalink to this heading"></a></h3>
+</section>
+<section id="indicator-random-variables">
+<h3>Indicator random variables<a class="headerlink" href="#indicator-random-variables" title="Permalink to this heading"></a></h3>
+</section>
+<section id="randomized-algorithms">
+<h3>Randomized algorithms<a class="headerlink" href="#randomized-algorithms" title="Permalink to this heading"></a></h3>
+</section>
+<section id="probabilistic-analysis-and-further-uses-of-indicator-random-variables">
+<h3>Probabilistic analysis and further uses of indicator random variables<a class="headerlink" href="#probabilistic-analysis-and-further-uses-of-indicator-random-variables" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Algorithms’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sortingAndOrderStatics.html" class="btn btn-neutral float-right" title="Sorting And Order Statics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, HungTran.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
