@@ -21,3 +21,4 @@ Indices and tables
    advancedDesignAndAnalysisTechniques
    advancedDataStructures
    graphAlgorithms
+   mitCourse
