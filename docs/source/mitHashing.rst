@@ -1,29 +1,30 @@
-Introduction
-============
-
-The goal of this class is to teach you to solve computation problems, and to communicate that
-your solutions are correct and efficient
+Hashing
+=======
 
 *******
-Problem
+Comparison Model
 *******
 
 *********
-Algorithm
+Decision Tree
 *********
 
-***********
-Correctness
-***********
+*****************************
+Comparison Search Lower Bound
+*****************************
 
-***********
-Efficiency
-***********
+*******************
+Direct Access Array
+*******************
 
-********************
-Model of computation
-********************
+*******
+Hashing
+*******
 
-**************
-Data Structure
-**************
+********
+Chaining
+********
+
+************
+Hah Function
+************

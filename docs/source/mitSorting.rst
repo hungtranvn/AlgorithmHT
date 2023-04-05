@@ -1,29 +1,30 @@
-Introduction
-============
+Sorting
+=======
 
-The goal of this class is to teach you to solve computation problems, and to communicate that
-your solutions are correct and efficient
+*************
+Set Interface
+*************
 
 *******
-Problem
+Sorting
 *******
 
-*********
-Algorithm
-*********
+****************
+Permutation Sort
+****************
 
-***********
-Correctness
-***********
-
-***********
-Efficiency
-***********
-
-********************
-Model of computation
-********************
+*******************
+Solving Recurrences
+*******************
 
 **************
-Data Structure
+Selection Sort
 **************
+
+**************
+Insertion Sort
+**************
+
+**********
+Merge Sort
+**********

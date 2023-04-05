@@ -1,29 +1,26 @@
-Introduction
-============
+Binary Tree
+===========
 
-The goal of this class is to teach you to solve computation problems, and to communicate that
-your solutions are correct and efficient
-
-*******
-Problem
-*******
-
-*********
-Algorithm
-*********
+***
+How
+***
 
 ***********
-Correctness
+Terminology
 ***********
 
 ***********
-Efficiency
+Tree Navigation
 ***********
 
-********************
-Model of computation
-********************
+******************
+Dynamic Operations
+******************
 
-**************
-Data Structure
-**************
+****************
+Application: Set
+****************
+
+*********************
+Application: Sequence
+*********************
