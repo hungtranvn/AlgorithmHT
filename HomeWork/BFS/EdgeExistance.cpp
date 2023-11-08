@@ -17,18 +17,21 @@ Print Q lines, the answer to each query on a new line.
 
 #include <iostream>
 #include <vector>
+#include <pair>
 #include <unordered_map>
 
 using namespace std;
 
-void do_exist () {
+void do_exist (pair<int, int>& edge, vector<int>& adj) {
+    int first = edge.first;
+    int second = edge.second;
 
 }
 
 int main() {
     int N, M;
     cin>> N >> M;
-    vector<int> adj[N];
+    vector<vector<int>> adj(N);
 
     while (M > 0)
     {
@@ -44,6 +47,7 @@ int main() {
     while (Q > 0) {
         int A, B;
         cin >> A >> B;
+        is_exist()
         Q--;
     }
     return 0;
