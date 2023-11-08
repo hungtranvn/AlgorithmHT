@@ -24,7 +24,7 @@ Print Q lines, the answer to each query on a new line.
 
 using namespace std;
 
-bool do_exist (const pair<int, int>& edge, vector<vector<int>>& adj) {
+bool is_existed (const pair<int, int>& edge, vector<vector<int>>& adj) {
     int first = edge.first;
     int second = edge.second;
     bool ret = false;
@@ -54,7 +54,7 @@ int main() {
     while (Q > 0) {
         int A, B;
         cin >> A >> B;
-        if (do_exist(make_pair(A, B), adj))
+        if (is_existed(make_pair(A, B), adj))
             cout << "YES" << endl;
         else
             cout << "NO" << endl;
