@@ -17,15 +17,22 @@ Print Q lines, the answer to each query on a new line.
 
 #include <iostream>
 #include <vector>
-#include <pair>
 #include <unordered_map>
+#include <algorithm>
+#include <utility>
+#include <tuple>
 
 using namespace std;
 
-void do_exist (pair<int, int>& edge, vector<int>& adj) {
+bool do_exist (const pair<int, int>& edge, vector<vector<int>>& adj) {
     int first = edge.first;
     int second = edge.second;
-
+    bool ret = false;
+    for (int i = 0; i < adj.size(); ++i) {
+        if (find(adj[first].begin(), adj[first].end(), second) != adj[first].end())
+            ret = true;
+    }
+    return ret;
 }
 
 int main() {
@@ -47,7 +54,10 @@ int main() {
     while (Q > 0) {
         int A, B;
         cin >> A >> B;
-        is_exist()
+        if (do_exist(make_pair(A, B), adj))
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
         Q--;
     }
     return 0;
