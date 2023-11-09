@@ -17,6 +17,7 @@ You need to print a single integers denoting the number of nodes on level x.
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <algorithm>
 
 using namespace std;
 
@@ -31,17 +32,16 @@ void BFS (int source, vector<vector<int>> adj) {
         int v = q.front();
         q.pop();
         
-        for (w : adj[v]) {
-            if (!visit[v]) {
+        for (auto w : adj[v]) {
+            if (!visit[adj[v][w]]) {
                 level[adj[v][w]] = level[v] + 1;
-                q.push(w);
-                visit[w] = true;
+                q.push(adj[v][w]);
+                visit[adj[v][w]] = true;
             }
         }
     }
 
-    for (auto& v : level)
-        cout << "Node " << v - level.begin() << " at level " << *v << endl;
+    for_each(level.begin(), level.end(), [](const int n) {cout << n; });
 }
 
 int main() {
