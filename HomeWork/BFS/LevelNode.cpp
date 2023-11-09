@@ -16,12 +16,53 @@ You need to print a single integers denoting the number of nodes on level x.
 
 #include <iostream>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
+void BFS (int source, vector<vector<int>> adj) {
+    queue<int> q;
+    vector<bool> visit(adj.size(), false);
+    vector<int> level(adj.size(), 0);
+ 
+    q.push(source);
+    level[source] = 0;
+    while (!q.empty()) {
+        int v = q.front();
+        q.pop();
+        
+        for (w : adj[v]) {
+            if (!visit[v]) {
+                level[adj[v][w]] = level[v] + 1;
+                q.push(w);
+                visit[w] = true;
+            }
+        }
+    }
+
+    for (auto& v : level)
+        cout << "Node " << v - level.begin() << " at level " << *v << endl;
+}
+
 int main() {
-    int N;
-    cin>>N;
-    unordered_map<int, vector<int>> vertices;
+    int nodes, edges;
+    cout << "Enter the number of nodes and number of adges: ";
+    cin >> nodes >> edges;
+
+    vector<vector<int>> adj(nodes);
+
+    while (edges > 0) {
+        int A, B;
+        cout << "Enter the adge A--B:";
+        cin >> A >> B;
+        adj[A].push_back(B);
+        edges--;
+    }
+
+    int source;
+    cout << "Enter source: ";
+    cin >> source;
+    BFS(source, adj);
+
     return 0;
 }

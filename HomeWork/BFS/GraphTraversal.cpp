@@ -9,7 +9,6 @@ void BFS(int source, const vector<vector<int>>& adj) {
     vector<bool> visit(adj.size(), false);
     queue<int> q;
     q.push(source);
-    visit[source] = false;
     
     while(!q.empty()) {
         int v = q.front();
@@ -41,7 +40,7 @@ int main() {
 
     int source;
     cout << "Enter source: ";
-    cin >> source; 
+    cin >> source;
     BFS(source, adj);
 
     return 0;
