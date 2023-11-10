@@ -48,19 +48,17 @@ void BFS (int source, vector<vector<int>> adj) {
 */
 
 vector<int> BFS (vector<vector<int>> adj, int source) {
+    cout << "enter BFS " << endl;
     vector<int> parent(adj.size(), -1);
-    parent[source] = source;
     vector<vector<int>> level;
     level.push_back({source});
 
-    while (0 < level.back().size()) {
+    while (level.back().size() > 0) {
         level.push_back({});
-        // loop all the last level
-        for (int i = 0; i < level[level.size() - 2].size(); ++i){
-            // Check all 
-            for (int v = 0; v < adj[i].size(), ++v) {
+        for (auto e : level.rbegin()[1]) {
+            for (auto v : adj[e]) {
                 if (parent[v] == -1) {
-                    parent[v] = level[level.size() - 2][i];
+                    parent[v] = e;
                     level.back().push_back(v);
                 }
             }
