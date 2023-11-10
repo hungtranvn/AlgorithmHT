@@ -18,9 +18,11 @@ You need to print a single integers denoting the number of nodes on level x.
 #include <vector>
 #include <queue>
 #include <algorithm>
+#include <limits>
 
 using namespace std;
 
+/*
 void BFS (int source, vector<vector<int>> adj) {
     queue<int> q;
     vector<bool> visit(adj.size(), false);
@@ -42,6 +44,30 @@ void BFS (int source, vector<vector<int>> adj) {
     }
 
     for_each(level.begin(), level.end(), [](const int n) {cout << n; });
+}
+*/
+
+vector<int> BFS (vector<vector<int>> adj, int source) {
+    vector<int> parent(adj.size(), -1);
+    parent[source] = source;
+    vector<vector<int>> level;
+    level.push_back({source});
+
+    while (0 < level.back().size()) {
+        level.push_back({});
+        // loop all the last level
+        for (int i = 0; i < level[level.size() - 2].size(); ++i){
+            // Check all 
+            for (int v = 0; v < adj[i].size(), ++v) {
+                if (parent[v] == -1) {
+                    parent[v] = level[level.size() - 2][i];
+                    level.back().push_back(v);
+                }
+            }
+        }
+    }
+
+    return parent;
 }
 
 int main() {
