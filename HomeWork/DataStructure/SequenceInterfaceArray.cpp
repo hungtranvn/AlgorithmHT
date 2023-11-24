@@ -8,7 +8,8 @@ void SequenceInterfaceArray::insert_at(int index, int value) {
     this->_copy_forward(0, index, temp, 0);
     temp[index] = value;
     this->_copy_backward(index, _size - index, temp, index + 1);
-    this->build(temp, _size + 1);
+    this->_build(temp, _size + 1);
+    delete [] temp;
 }
 
 int SequenceInterfaceArray::delete_at(int index) {
@@ -16,7 +17,8 @@ int SequenceInterfaceArray::delete_at(int index) {
     this->_copy_forward(0, index, temp, 0);
     int x = _arr[index];
     this->_copy_backward(index + 1, _size - index - 1, temp, index);
-    this->build(temp, _size - 1);
+    this->_build(temp, _size - 1);
+    delete [] temp;
     return x;
 }
 
@@ -65,7 +67,7 @@ void SequenceInterfaceArray::set_at(int index, int value) {
     }
 }
 
-void SequenceInterfaceArray::build(int seq[], int size) {
+void SequenceInterfaceArray::_build(int seq[], int size) {
     if (_arr != nullptr) {
         delete [] _arr;
     }
@@ -88,7 +90,7 @@ void SequenceInterfaceArray::iter_seq() const {
 }
 
 SequenceInterfaceArray::SequenceInterfaceArray(int seq[], int size) {
-    build(seq, size);
+    this->_build(seq, size);
 }
 
 SequenceInterfaceArray::~SequenceInterfaceArray() {

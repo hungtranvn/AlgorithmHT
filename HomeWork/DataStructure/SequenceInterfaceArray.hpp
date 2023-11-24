@@ -25,7 +25,7 @@ public:
     void iter_seq() const;
     
     // container
-    void build(int seq[], int size);
+    void _build(int seq[], int size);
     int len() const;
     
     // constructor/destructor

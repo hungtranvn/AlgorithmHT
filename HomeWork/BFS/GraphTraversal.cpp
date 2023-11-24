@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <queue>
 
 using namespace std;
@@ -8,8 +7,9 @@ using namespace std;
 void BFS(int source, const vector<vector<int>>& adj) {
     vector<bool> visit(adj.size(), false);
     queue<int> q;
-    q.push(source);
     
+    q.push(source);
+    visit[source] = true;
     while(!q.empty()) {
         int v = q.front();
         cout << "visited node: " << v << endl;
@@ -33,7 +33,7 @@ int main() {
 
     while (edges > 0) {
         int A, B;
-        cout << "Enter the adge A--B:";
+        cout << "Enter the edge A--B:";
         cin >> A >> B;
         adj[A].push_back(B);
         edges--;

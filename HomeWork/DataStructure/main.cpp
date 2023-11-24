@@ -11,7 +11,7 @@ int main() {
     cout << endl;
     arr_seq.iter_seq();
     cout << endl;
-    int x = arr_seq.delete_at(2);
+    int x = arr_seqcd Hom       .delete_at(2);
     cout << endl;
     arr_seq.iter_seq();
     cout << endl;
