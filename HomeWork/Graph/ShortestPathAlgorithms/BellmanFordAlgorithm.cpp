@@ -1,9 +1,11 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 #include <vector>
 #include <string>
 
+#include <limits.h>
 #include <algorithm>
 
 using namespace std;
@@ -35,6 +37,15 @@ vector<Edge> get_edges(string file_path, char seperator) {
         return ret;
     }
 
+    string line;
+    getline(file, line);
+    stringstream ss(line);
+    vector<int> numbers(2);
+    for (int i = 0; ss >> i; ) {
+        numbers.push_back(i);
+        cout << i << " ";
+    }
+
     while(!file.eof()) {
         string row;
         getline(file, row);
@@ -63,6 +74,16 @@ vector<Edge> get_edges(string file_path, char seperator) {
     return ret;
 }
 
+void bellman_ford(int source, vector<Edge> edges) {
+    vector<int> d(edges.size(), INT_MAX);
+    d[source] = 0;
+    for (int i = 0; i < edges.size() - 1; ++i) {
+
+    }
+}
 int main() {
-    
+    vector<Edge> edges = get_edges("./data", ' ');
+    for (auto e : edges)
+        cout << e;
+    return 0;
 }

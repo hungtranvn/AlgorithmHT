@@ -66,7 +66,7 @@ vector<Edge> get_edges(string file_path, char seperator) {
 vector<Edge> kruskal(vector<Edge> edges) {
     vector<Edge> ret;
     int cost = 0;
-    vector<int> tree_id(edges.size());
+    vector<int> tree_id();
     for (auto i =  0; i < edges.size(); ++i) {
         tree_id[i] = i;
     }
