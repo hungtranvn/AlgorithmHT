@@ -10,80 +10,39 @@
 
 using namespace std;
 
-struct Edge {
-    int u, v, weight;
-    bool operator<(Edge const& other) {
-        return weight < other.weight;
-    }
-    friend ostream &operator<<( ostream &output, const Edge &e ) { 
-        output << "u: " << e.u << " v: " << e.v << " weight: " << e.weight << endl;
-        return output;            
-    }
-
-    friend istream &operator>>( istream  &input, Edge &e ) { 
-        input >> e.u >> e.v >> e.weight;
-        return input;            
-    }
+vector<vector<int>> adj {
+    {1,2,3},
+    {0,2},
+    {0,1,3},
+    {0,2},
 };
 
-// Reading matrix
-// https://www.codeproject.com/Questions/5248550/Opening-and-reading-a-matrix-file
-vector<Edge> get_edges(string file_path, char seperator) {
-    vector<Edge> ret;
-    ifstream file;
-    file.open(file_path);
-    cout << "Open file OK \n";
-    if (!file.is_open()) {
-        return ret;
+vector<vector<int>> weights {
+    {0, 1, 3, 4},
+    {1, 0, 2, 0},
+    {3, 2, 0, 5},
+    {4, 0, 5, 0},
+};
+
+vector<int> d(adj.size(), INT_MAX);
+vector<int> p(adj.size(), -1);
+
+void try_to_relax(vector<vector<int>>& adj, vector<vector<int>>& weights, vector<int>& d, int u, int v) {
+    if (d[v] > d[u] + weights[u][v]) {
+        d[v] = d[u] + weights[u][v];
+        p[v] = u;
     }
-
-    string line;
-    getline(file, line);
-    stringstream ss(line);
-    vector<int> numbers(2);
-    for (int i = 0; ss >> i; ) {
-        numbers.push_back(i);
-        cout << i << " ";
-    }
-
-    while(!file.eof()) {
-        string row;
-        getline(file, row);
-        vector<int> row_vec;
-        string row_value = "";
-
-        for (char c : row) {
-            //cout << "row value: " << row_value << " and c: " << c << endl;
-            if (c == seperator) {
-                row_vec.push_back(stoi(row_value));
-                row_value = "";
-            } else {
-                row_value += c;
-            }
-        }
-
-        if(row_value.size() != 0) {
-            //cout << "row_vec size: " << row_vec.size() << endl;
-            row_vec.push_back(stoi(row_value));
-            ret.push_back({row_vec[0], row_vec[1], row_vec[2]});
-            row_value = "";
-        }
-    }
-
-    file.close();
-    return ret;
 }
 
-void bellman_ford(int source, vector<Edge> edges) {
-    vector<int> d(edges.size(), INT_MAX);
+void bellman_ford(vector<vector<int>>& adj, vector<vector<int>>& weights, int source) {
     d[source] = 0;
-    for (int i = 0; i < edges.size() - 1; ++i) {
+    p[source] = source;
+    
+    for (int i = 0; i < adj.size() - 1; ++i) {
 
     }
 }
+
 int main() {
-    vector<Edge> edges = get_edges("./data", ' ');
-    for (auto e : edges)
-        cout << e;
     return 0;
 }
