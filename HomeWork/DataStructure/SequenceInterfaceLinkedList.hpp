@@ -18,11 +18,11 @@ struct Node {
 
 class SequenceInterfaceLinkedList {
     Node* head {nullptr};
-    int size {0};
+    int _size {0};
 
     int len() const;
     void iter() const;
-    void build();
+    void _build(int seq[], int size);
 
 public: 
     int get_at(int i) const;
@@ -33,5 +33,6 @@ public:
     int delete_at(int i);
     void insert_last(int value);
     int delete_last();
+    SequenceInterfaceLinkedList(int seq[], int size);
 };
 #endif //SEQUENCE_INTERFACE_LINKED_LIST_H
