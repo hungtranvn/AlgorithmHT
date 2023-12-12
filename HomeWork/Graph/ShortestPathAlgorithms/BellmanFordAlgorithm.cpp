@@ -27,7 +27,7 @@ vector<vector<int>> weights {
 vector<int> d(adj.size(), INT_MAX);
 vector<int> p(adj.size(), -1);
 
-void try_to_relax(vector<vector<int>>& adj, vector<vector<int>>& weights, vector<int>& d, int u, int v) {
+void try_to_relax(vector<vector<int>>& adj, vector<vector<int>>& weights, int u, int v) {
     if (d[v] > d[u] + weights[u][v]) {
         d[v] = d[u] + weights[u][v];
         p[v] = u;
@@ -39,7 +39,11 @@ void bellman_ford(vector<vector<int>>& adj, vector<vector<int>>& weights, int so
     p[source] = source;
     
     for (int i = 0; i < adj.size() - 1; ++i) {
-
+        for (auto u = 0; v < adj.size(); ++j) {
+            for (auto v : adj[u] {
+                try_to_relax(adj, weights, u, v);
+            }
+        }
     }
 }
 
