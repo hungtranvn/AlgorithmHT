@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ vector<vector<int>> adj {
     {4,5},
     {1}
 };
-vector<int> visited(8, false);
+vector<bool> visited(8, false);
 vector<int> comp;
 
 void DFS(int v) {
@@ -24,11 +25,31 @@ void DFS(int v) {
     }
 }
 
+void iterative_DFS (int source) {
+    stack<int> s;
+
+    s.push(source);
+    visited[source] = true;
+
+    while(!s.empty()) {
+        int v = s.top();
+        //cout << "visited node: " << v << endl;
+        s.pop();
+        comp.push_back(v);
+        for (auto w : adj[v]) {
+            if (!visited[w]) {
+                s.push(w);
+                visited[w] = true;
+            }
+        }
+    }
+}
+
 int main () {
     for (auto v = 0; v < adj.size(); ++v) {
         if (!visited[v]) {
             comp.clear();
-            DFS(v);
+            iterative_DFS(v);
             cout << "Component: ";
             for (auto u : comp)
                 cout << u;
