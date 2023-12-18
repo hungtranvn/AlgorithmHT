@@ -33,7 +33,6 @@ void iterative_DFS (int source) {
 
     while(!s.empty()) {
         int v = s.top();
-        //cout << "visited node: " << v << endl;
         s.pop();
         comp.push_back(v);
         for (auto w : adj[v]) {
