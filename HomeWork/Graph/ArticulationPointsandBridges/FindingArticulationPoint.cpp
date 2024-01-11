@@ -36,7 +36,7 @@ void DFS(Node v) {
     }
 }
 
-void iterative_DFS (Node source, vector<Node>& copy_adj, vector<bool>& modified_visited) {
+void iterative_DFS (Node source, vector<Node>& copy_adj, vector<Node>& modified_comp,vector<bool>& modified_visited) {
     stack<Node> s;
 
     s.push(source);
@@ -86,7 +86,7 @@ int main () {
         for (auto v = 0; v < copy_adj.size(); ++v) {
             if (!modified_visited[v]) {
                 modified_comp.clear();
-                iterative_DFS(copy_adj[v], copy_adj, modified_visited);
+                iterative_DFS(copy_adj[v], copy_adj, modified_comp, modified_visited);
                 cout << "Component: ";
                 for (auto u : modified_comp)
                     cout << u.m_id;
