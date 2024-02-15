@@ -1,2 +1,99 @@
-https://www.hackerrank.com/contests/swpct-batch-5-pretest-2
-https://www.hackerrank.com/contests/swpct-batch-5-pretest-3/
+=> Exhaustive search & Binary search (Exercise):
+https://codeforces.com/problemset/problem/1742/E
+https://codeforces.com/problemset/problem/1744/C
+https://codejam.lge.com/problem/20917
+https://codeforces.com/problemset/problem/1760/F
+https://www.spoj.com/problems/MKUHAR/en/
+https://www.spoj.com/problems/AGGRCOW/
+https://www.spoj.com/problems/NOTATRI/
+https://www.codechef.com/problems/TRICOIN
+https://www.codechef.com/problems/COINS
+https://www.codechef.com/problems/FIRSTANDLAST
+Binary Search:
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+https://leetcode.com/problems/sqrtx/
+https://leetcode.com/problems/arranging-coins/
+https://leetcode.com/problems/maximum-tastiness-of-candy-basket/
+https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
+https://codejam.lge.com/contest/problem/1071/4
+
+=> Back tracking (Exercise):
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+https://leetcode.com/problems/generate-parentheses/
+https://leetcode.com/problems/subsets/
+https://leetcode.com/problems/sum-of-all-subset-xor-totals/
+https://leetcode.com/problems/combination-sum-ii/
+https://leetcode.com/problems/permutations/
+https://leetcode.com/problems/permutations-ii/
+https://leetcode.com/problems/target-sum/
+https://leetcode.com/problems/closest-dessert-cost/description/
+
+=> Dynamic programming:
+https://leetcode.com/problems/longest-mountain-in-array/
+https://leetcode.com/problems/domino-and-tromino-tiling/
+https://leetcode.com/problems/jump-game/
+https://leetcode.com/problems/container-with-most-water/
+https://codepro.lge.com/exam/19/overseas-questions-for-previous-test/quiz/5
+https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/partition-equal-subset-sum/description/
+https://leetcode.com/problems/partition-equal-subset-sum/description/
+https://leetcode.com/problems/last-stone-weight-ii/description/
+https://atcoder.jp/contests/abc291/tasks/abc291_c
+
+=> Greedy:
+https://leetcode.com/problems/jump-game-ii/description/ Greedy
+https://leetcode.com/problems/gas-station/ Greedy
+https://leetcode.com/problems/partition-labels/ Greedy
+https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+https://leetcode.com/problems/array-partition/
+https://leetcode.com/problems/lemonade-change/
+https://leetcode.com/problems/maximum-number-of-coins-you-can-get/
+https://leetcode.com/problems/task-scheduler/
+https://leetcode.com/problems/broken-calculator/
+https://leetcode.com/problems/maximal-score-after-applying-k-operations/description/
+https://leetcode.com/problems/minimize-maximum-of-array/description/
+https://leetcode.com/problems/sum-game/description/
+
+=> BFS & DFS & Flood fill:
+https://leetcode.com/problems/flood-fill/
+https://www.spoj.com/problems/CAM5/
+https://www.spoj.com/problems/PT07Y/
+https://www.codechef.com/problems/FIRESC
+https://leetcode.com/problems/find-if-path-exists-in-graph/
+https://leetcode.com/problems/path-sum/
+https://www.spoj.com/problems/ELEVTRBL/
+https://leetcode.com/problems/as-far-from-land-as-possible/
+https://leetcode.com/problems/course-schedule/
+https://leetcode.com/problems/detect-cycles-in-2d-grid/
+https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
+https://leetcode.com/problems/number-of-islands/
+https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/ 
+
+Pre-test:
+https://www.hackerrank.com/contests/swct-pre-test/challenges
+https://www.hackerrank.com/swct-pretest-2
+https://www.hackerrank.com/contests/swct-pretest-2
+https://www.hackerrank.com/contests/spct-pretest-1-batch-4/challenges
+https://www.hackerrank.com/contests/swpct-batch-4-pretest-2/challenges
+https://www.hackerrank.com/contests/swpct-practice/challenges
+https://www.hackerrank.com/contests/swct-pre-test/challenges
+https://www.hackerrank.com/contests/spct-problem-set/challenges
+https://www.spoj.com/problems/TTBRM/
+https://www.spoj.com/problems/APIO10A/
+
+
+More practice:
+https://codeforces.com/contest/1183/problem/C
+https://codeforces.com/contest/902/problem/B
+https://codeforces.com/contest/124/problem/B
+https://www.codechef.com/problems/LARGESTY
+https://codeforces.com/contest/796/problem/D
+https://codeforces.com/contest/1195/problem/C
+https://codeforces.com/contest/1176/problem/C
+https://leetcode.com/problems/rectangle-overlap/
+https://leetcode.com/problems/repeated-dna-sequences/
+https://leetcode.com/problems/binary-watch/
+https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
+https://www.spoj.com/problems/TTBRM/
+https://www.spoj.com/problems/APIO10A/
+https://codepro.lge.com/ => recomment
