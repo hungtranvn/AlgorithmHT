@@ -1,4 +1,10 @@
-=> Exhaustive search & Binary search (Exercise):
+**Data structure
+https://leetcode.com/problems/daily-temperatures/
+https://leetcode.com/problems/find-the-most-competitive-subsequence/
+https://leetcode.com/problems/find-the-winner-of-the-circular-game/
+https://leetcode.com/problems/top-k-frequent-words/
+
+**Exhaustive search
 https://codeforces.com/problemset/problem/1742/E
 https://codeforces.com/problemset/problem/1744/C
 https://codejam.lge.com/problem/20917
@@ -9,7 +15,8 @@ https://www.spoj.com/problems/NOTATRI/
 https://www.codechef.com/problems/TRICOIN
 https://www.codechef.com/problems/COINS
 https://www.codechef.com/problems/FIRSTANDLAST
-Binary Search:
+
+**Binary Search
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 https://leetcode.com/problems/sqrtx/
 https://leetcode.com/problems/arranging-coins/
@@ -17,30 +24,17 @@ https://leetcode.com/problems/maximum-tastiness-of-candy-basket/
 https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
 https://codejam.lge.com/contest/problem/1071/4
 
-=> Back tracking (Exercise):
+**Back tracking (Exercise)
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 https://leetcode.com/problems/generate-parentheses/
 https://leetcode.com/problems/subsets/
 https://leetcode.com/problems/sum-of-all-subset-xor-totals/
-https://leetcode.com/problems/combination-sum-ii/
 https://leetcode.com/problems/permutations/
 https://leetcode.com/problems/permutations-ii/
 https://leetcode.com/problems/target-sum/
 https://leetcode.com/problems/closest-dessert-cost/description/
 
-=> Dynamic programming:
-https://leetcode.com/problems/longest-mountain-in-array/
-https://leetcode.com/problems/domino-and-tromino-tiling/
-https://leetcode.com/problems/jump-game/
-https://leetcode.com/problems/container-with-most-water/
-https://codepro.lge.com/exam/19/overseas-questions-for-previous-test/quiz/5
-https://leetcode.com/problems/longest-palindromic-substring/
-https://leetcode.com/problems/partition-equal-subset-sum/description/
-https://leetcode.com/problems/partition-equal-subset-sum/description/
-https://leetcode.com/problems/last-stone-weight-ii/description/
-https://atcoder.jp/contests/abc291/tasks/abc291_c
-
-=> Greedy:
+**Greedy
 https://leetcode.com/problems/jump-game-ii/description/ Greedy
 https://leetcode.com/problems/gas-station/ Greedy
 https://leetcode.com/problems/partition-labels/ Greedy
@@ -54,7 +48,7 @@ https://leetcode.com/problems/maximal-score-after-applying-k-operations/descript
 https://leetcode.com/problems/minimize-maximum-of-array/description/
 https://leetcode.com/problems/sum-game/description/
 
-=> BFS & DFS & Flood fill:
+**BFS & DFS & Flood fill
 https://leetcode.com/problems/flood-fill/
 https://www.spoj.com/problems/CAM5/
 https://www.spoj.com/problems/PT07Y/
@@ -69,7 +63,19 @@ https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
 https://leetcode.com/problems/number-of-islands/
 https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/ 
 
-Pre-test:
+**Dynamic programming
+https://leetcode.com/problems/longest-mountain-in-array/
+https://leetcode.com/problems/domino-and-tromino-tiling/
+https://leetcode.com/problems/jump-game/
+https://leetcode.com/problems/container-with-most-water/
+https://codepro.lge.com/exam/19/overseas-questions-for-previous-test/quiz/5
+https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/partition-equal-subset-sum/description/
+https://leetcode.com/problems/partition-equal-subset-sum/description/
+https://leetcode.com/problems/last-stone-weight-ii/description/
+https://atcoder.jp/contests/abc291/tasks/abc291_c
+
+**Pre-test
 https://www.hackerrank.com/contests/swct-pre-test/challenges
 https://www.hackerrank.com/swct-pretest-2
 https://www.hackerrank.com/contests/swct-pretest-2
@@ -82,7 +88,7 @@ https://www.spoj.com/problems/TTBRM/
 https://www.spoj.com/problems/APIO10A/
 
 
-More practice:
+**More practice:
 https://codeforces.com/contest/1183/problem/C
 https://codeforces.com/contest/902/problem/B
 https://codeforces.com/contest/124/problem/B
