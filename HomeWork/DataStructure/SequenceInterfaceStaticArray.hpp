@@ -1,14 +1,15 @@
-#ifndef _SEQUENCE_INTERFACE_ARRAY_H
-#define _SEQUENCE_INTERFACE_ARRAY_H
+#ifndef _SEQUENCE_INTERFACE_STATIC_ARRAY_H
+#define _SEQUENCE_INTERFACE_STATIC_ARRAY_H
 
 using namespace std;
 
-class SequenceInterfaceArray {
+class SequenceInterfaceStaticArray {
 private:
     int *_arr = nullptr;
     int _size = 0;
-    void _copy_forward(int i, int n, int A[], int j);
-    void _copy_backward(int i, int n, int A[], int j);
+protected:
+    void copy_forward(int i, int n, int A[], int j);
+    void copy_backward(int i, int n, int A[], int j);
 public:
 
     // dynamic
@@ -25,12 +26,12 @@ public:
     void iter_seq() const;
     
     // container
-    void _build(int seq[], int size);
+    void build(int seq[], int size);
     int len() const;
     
     // constructor/destructor
-    SequenceInterfaceArray(int seq[], int size);
-    virtual ~SequenceInterfaceArray();
+    SequenceInterfaceStaticArray(int seq[], int size);
+    virtual ~SequenceInterfaceStaticArray();
 };
-#endif //_SEQUENCE_INTERFACE_ARRAY_H
+#endif //_SEQUENCE_INTERFACE_STATIC_ARRAY_H
 

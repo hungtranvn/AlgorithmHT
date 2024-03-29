@@ -1,12 +1,12 @@
 #include <iostream>
-#include "SequenceInterfaceArray.hpp"
+#include "SequenceInterfaceStaticArray.hpp"
 #include "SequenceInterfaceLinkedList.hpp"
 
 using namespace std;
 
 int main() {
     int arr[] = {0, 1, 2, 3, 4};
-    SequenceInterfaceArray arr_seq(arr, sizeof(arr)/sizeof(int));
+    SequenceInterfaceStaticArray arr_seq(arr, sizeof(arr)/sizeof(int));
     cout << arr_seq.len() << endl;
     arr_seq.iter_seq();
     arr_seq.insert_at(0, 20);

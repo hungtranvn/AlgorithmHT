@@ -103,3 +103,24 @@ https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
 https://www.spoj.com/problems/TTBRM/
 https://www.spoj.com/problems/APIO10A/
 https://codepro.lge.com/ => recomment
+
+https://leetcode.com/problems/word-search/description/
+https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/description/
+https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/description/
+
+https://leetcode.com/problems/mice-and-cheese 
+https://leetcode.com/problems/minimum-cost-to-make-array-equal
+https://leetcode.com/problems/maximum-strength-of-a-group
+https://leetcode.com/problems/maximum-good-people-based-on-statements
+https://leetcode.com/problems/minimum-time-to-complete-trips/
+
+https://leetcode.com/problems/time-needed-to-inform-all-employees
+https://leetcode.com/problems/keys-and-rooms
+https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid
+https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons
+https://leetcode.com/problems/sum-of-total-strength-of-wizards
+
+https://leetcode.com/problems/koko-eating-bananas/
+https://leetcode.com/problems/permutations/
+https://leetcode.com/problems/n-queens/
+https://leetcode.com/problems/maximum-score-words-formed-by-letters/
