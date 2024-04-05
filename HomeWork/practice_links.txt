@@ -1,3 +1,8 @@
+***Advice:
+https://mdotsabouri.blogspot.com/2014/10/my-recipe-to-improve-your-programming.html
+
+***Tips
+
 **Data structure
 https://leetcode.com/problems/daily-temperatures/
 https://leetcode.com/problems/find-the-most-competitive-subsequence/
