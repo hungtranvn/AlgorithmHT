@@ -80,6 +80,11 @@ https://leetcode.com/problems/partition-equal-subset-sum/description/
 https://leetcode.com/problems/last-stone-weight-ii/description/
 https://atcoder.jp/contests/abc291/tasks/abc291_c
 
+**Bitwise
+https://www.hackerrank.com/challenges/cipher/problem
+https://www.hackerrank.com/challenges/encryption/problem
+https://www.hackerrank.com/challenges/winning-lottery-ticket/problem
+
 **Pre-test
 https://www.hackerrank.com/contests/swct-pre-test/challenges
 https://www.hackerrank.com/swct-pretest-2
