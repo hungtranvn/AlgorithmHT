@@ -1,6 +1,16 @@
 Elementary Data Structures
 ==========================
 
+******
+Arrays
+******
+The array is fundamental contiguosly allocated data structure.
+A structure of fixed-size data records such that each element can be efficiently located by its index or address.
+
+Advantages:
+Constant time access given the index: the index of each element maps directly to a particular address, we can access arbitrary data items instantly.
+Space efficieny: 
+
 *****************
 Stacks and queues
 *****************
