@@ -9,15 +9,89 @@ A structure of fixed-size data records such that each element can be efficiently
 
 Advantages:
 Constant time access given the index: the index of each element maps directly to a particular address, we can access arbitrary data items instantly.
-Space efficieny: 
+Space efficieny: No space is wasted
+Memory locality: Physical continuity between successive data access helps exploit the high-speed cache memory.
 
-*****************
-Stacks and queues
-*****************
+Disadvantaged:
+We can not adjust their size in the middle of executions. However, we can efficiently enlarge arrays as we need in the miracle of dynamic array.
 
-************
-Linked lists
-************
+******************************
+Pointers and linked structures
+******************************
+Pointers are the conections that holds the pieces of linked structures together
+.. code-block:: c++
+
+typedef struct List
+{
+    item_type item;
+    struct List *next;
+} list;
+
+list* search_list(list* l, item_type x)
+{
+    if (l == NULL)
+    {
+        return(NULL);
+    }
+
+    if (l->item == x)
+    {
+        return l;
+    }
+    else
+    {
+        return search_list(l->next, x);
+    }
+}
+
+void insert_list(list **l, item_type x)
+{
+    list* p;
+    p = malloc(sizeof(list));
+    p->item = x;
+    p->next = *l;
+    *l = p;
+}
+
+list *item_ahead(list *l, list *x)
+{
+    if (l == NULL  || l->next == NULL)
+    {
+        return NULL;
+    }
+
+    if (l->next == x)
+    {
+        return(l);
+    }
+    else
+    {
+        return(item_ahead(l->next, x));
+    }
+}
+
+void delete_list(list **l, list **x)
+{
+    list *p;
+    list *pred;
+
+    p = *l;
+    pred = item_ahead(*l, *x);
+
+    if (pred == NULL)
+    {
+        *l = p->next;
+    }
+    else
+    {
+        pred->next = *x->next;
+    }
+    free(*x);
+}
+
+*****************************
+Containers: stacks and queues
+*****************************
 
 *********************************
 Implementing pointers and objects
