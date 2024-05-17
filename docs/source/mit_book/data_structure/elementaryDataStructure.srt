@@ -20,6 +20,7 @@ Pointers and linked structures
 ******************************
 Pointers are the conections that holds the pieces of linked structures together
 .. code-block:: c++
+:linenos:
 
 typedef struct List
 {
@@ -92,7 +93,54 @@ void delete_list(list **l, list **x)
 *****************************
 Containers: stacks and queues
 *****************************
+stacks: LIFO, interface (push, pop)
+examples: executing recursive algorithm
+queues: FIFO, interface (enqueue, dequeue)
+examples: jobs processed, breath first search
 
+**********
+Dictionary
+**********
+Interface: search, insert, delete, max, min, precessor, successor
+Examples: remove all duplicate names from mailing list
+
++------------------------+---------------+--------------------+
+| Dictionary operation   | Unsorted array| Sorted array       |
+|                        |               |                    |
++========================+===============+====================+
+| search(A, k)           | O(n)          | O(n)               |
++------------------------+---------------+--------------------+
+| insert(A, k)           | O(1)          | O(n)               |
++------------------------+---------------+--------------------+
+| delete(A, k)           | O(1)          | O(n)               |
++------------------------+---------------+--------------------+
+| successor(A, k)        | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+| predessor(A, k)        | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+| minimum(A, k)          | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+| maximum(A, k)          | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+
++------------------------+---------------+--------------------+
+| Dictionary operation   | Singly linked list| Sorted array       |
+|                        |               |                    |
++========================+===============+====================+
+| search(A, k)           | O(n)          | O(n)               |
++------------------------+---------------+--------------------+
+| insert(A, k)           | O(1)          | O(n)               |
++------------------------+---------------+--------------------+
+| delete(A, k)           | O(1)          | O(n)               |
++------------------------+---------------+--------------------+
+| successor(A, k)        | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+| predessor(A, k)        | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+| minimum(A, k)          | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
+| maximum(A, k)          | O(n)          | O(1)               |
++------------------------+---------------+--------------------+
 *********************************
 Implementing pointers and objects
 *********************************
