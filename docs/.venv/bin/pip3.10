@@ -1,4 +1,4 @@
-#!/home/hungtran/Study/MIT/IntroductionToAlgorithms/AlgorithmDoc/docs/.venv/bin/python3
+#!/home/hungtran/WorkSpace/AlgorithmHT/docs/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

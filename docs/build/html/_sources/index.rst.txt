@@ -15,9 +15,10 @@ To help you when you encounter unfamiliar or difficult algorithms, we describe e
 Indices and tables
 ==================
 .. toctree::
-   foundations
-   sortingAndOrderStatics
-   dataStructures
-   advancedDesignAndAnalysisTechniques
-   advancedDataStructures
-   graphAlgorithms
+   mit_book/foundations
+   mit_book/sortingAndOrderStatics
+   mit_book/dataStructures
+   mit_book/advancedDesignAndAnalysisTechniques
+   mit_book/advancedDataStructures
+   mit_book/graphAlgorithms
+   mit_syllabus/mitCourse
