@@ -4,12 +4,30 @@ def insertion_sort(A):
     for j in range(2, len(A)):
         key = A[j]
         i = j - 1
-        while i > 0 and A[i] > key:
+        while i > 0 and A[i] > key: # using binary search? 
             A[i+1] = A[i]
             i = i - 1
         A[i+1] = key
         print(A)
     return A
+
+def insertion_sort_recursive(A, n):
+    if n > 1:
+        insertion_sort_recursive(A, n-1);
+        merge_i(A, n)
+
+def merge_i(A, n):
+    '''
+    merge the A[n] into sorted A[0:n-1] range
+    '''
+    key = A[n-1]
+    j = n - 2
+    while j >= 0 and key < A[j]:
+        A[j + 1] = A[j]
+        j = j - 1
+    A[j + 1] = key
+
+def binary_search(A, key):
 
 def merge_sort(A, a, b = None):
     if b == None:
@@ -58,7 +76,7 @@ def merge_sorted_arrays(A, a, c, b):
         A[count] = R[j]
         j = j + 1
         count = count + 1
-        
+
     print("A_sorted = ", A)
 
 '''
@@ -88,8 +106,9 @@ def merge_sorted_arrays(A, p, q, r):
 def main():
     A = [1,4,2,7,6,5]
     print("A = ", A)
-    print(merge_sort(A, 0, len(A)))
-    #print(A)
+    #print(merge_sort(A, 0, len(A)))
+    insertion_sort_recursive(A, len(A))
+    print(A)
 
 if __name__ == "__main__":
     main();

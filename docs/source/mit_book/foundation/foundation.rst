@@ -12,7 +12,7 @@ The problems are solved by algorithms: the Human Genome project, the internet (f
 Some specific problems:
 
 **************
-Dat structures
+Data structures
 **************
 
 *********
@@ -43,5 +43,31 @@ Input: A sequence of numbers <a1, a2, a3, ..., an>.
 
 Output: A permutation reordering <a1', a2', a3', ..., an'>.
 
-Examine: merge sort (devide and conquer) 
+Examine: merge sort (devide and conquer)
 ========================================
+
+******************
+Divide and conquer 
+******************
+Divide:
+
+Conquer:
+
+Combine:
+
+2.3-4 We can express insertion sort as a recursive procedure as follows. In order to sort A[1..n]], we recursively sort A[1..n-1] and then insert A[n] into the sorted array A[1..n-1]. Write a recurrence for the worst-case running time of this recursive version of insertion sort.
+
+2.3-5 Referring back to the searching problem (see Exercise 2.1-3), observe that if the sequence A is sorted, we can check the midpoint of the sequence against and eliminate half of the sequence from further consideration. The binary search algorithm repeats this procedure, halving the size of the remaining portion of the sequence each time. Write pseudocode, either iterative or recursive, for binary search. Argue that the worst-case running time of binary search is ‚.lg n/.
+
+2.3-6 Observe that the while loop of lines 5–7 of the INSERTION-SORT procedure in Section 2.1 uses a linear search to scan (backward) through the sorted subarray A[1..j-1]]. Can we use a binary search (see Exercise 2.3-5) instead to improve the overall worst-case running time of insertion sort to ‚.n lg n/?
+
+2.3-7 Describe a nlgn time algorithm that, given a set S of n integers and another integer x, determines whether or not there exist two elements in S whose sum is exactly x.
+
+solution1: nlogn
+Sort array S
+for i in S:
+    to_find = x - S[i]
+    binary search
+
+solution2: logn
+two pointers
