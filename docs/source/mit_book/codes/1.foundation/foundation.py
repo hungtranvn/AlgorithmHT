@@ -1,5 +1,11 @@
 import sys
 
+def search_recursive(A, n, key):
+    if (n >= 0):
+        if A[n] == key:
+            return n
+        return search_recursive(A, n-1, key)
+
 def insertion_sort(A):
     for j in range(2, len(A)):
         key = A[j]
@@ -27,7 +33,7 @@ def merge_i(A, n):
         j = j - 1
     A[j + 1] = key
 
-def binary_search(A, key):
+#def binary_search(A, key):
 
 def merge_sort(A, a, b = None):
     if b == None:
@@ -103,12 +109,79 @@ def merge_sorted_arrays(A, p, q, r):
             j = j + 1
     #print("A_sorted = ", A)
 '''
+
+def brute_force_max_subarray(A):
+    """
+    brute force solution:
+    A is the diff of prices
+    return the subarray's indices 
+    """
+    ans = -sys.maxsize - 1
+    ret = [0, 0]
+    for i in range(0, len(A), 1):
+        sum = 0
+        for j in range(i, len(A), 1):
+            sum += A[j]
+            if (sum > ans):
+                ans = sum
+                ret = [i, j]
+    return ret + [ans]
+
+def find_max_crossing_subarray(A, low, mid, high):
+    """
+    helper function used for find_maximum_subarray 
+    """
+    left_sum = -sys.maxsize - 1
+    sum_l = 0
+    max_left = mid
+    for i in range(mid, low, -1):
+        sum_l = sum_l + A[i]
+        if sum_l > left_sum:
+            left_sum = sum_l
+            max_left = i
+    
+    right_sum = -sys.maxsize - 1
+    sum_r = 0
+    max_right = mid
+    for j in range(mid, high, 1):
+        sum_r = sum_r + A[j]
+        if sum_r > right_sum:
+            right_sum = sum_r
+            max_right = j
+    return [max_left, max_right, left_sum + right_sum - A[mid]]
+
+def find_maximum_subarray(A, low, high):
+    """
+    devide conquer technique
+    """
+    if high == low: #base case 1 element
+        return [low, high, A[low]]
+    else:
+        mid = (low + high) // 2
+        left_low, left_high, left_sum = find_maximum_subarray(A, low, mid)
+        right_low, right_high,  right_sum = find_maximum_subarray(A, mid + 1, high)
+        cross_low, cross_high, cross_sum = find_max_crossing_subarray(A, low, mid, high)
+        
+        if left_sum >= right_sum and left_sum >= cross_sum:
+            return [left_low, left_high, left_sum]
+        elif right_sum >= left_sum and left_sum >= cross_sum:
+            return [right_low, right_high, right_sum]
+        else:
+            return [cross_low, cross_high, cross_sum]
+
+
 def main():
-    A = [1,4,2,7,6,5]
+    A = [1, 4, 2, 7, 6, 5]
     print("A = ", A)
     #print(merge_sort(A, 0, len(A)))
     insertion_sort_recursive(A, len(A))
     print(A)
-
+    to_find = search_recursive(A, len(A)-1, 5)
+    print(to_find)
+    
+    B = [-9, 1, -5, 4, 3, -6, 7, 8, -2]
+    C = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+    print(brute_force_max_subarray(B))
+    print(find_maximum_subarray(B, 0, len(B)-1))
 if __name__ == "__main__":
-    main();
+    main()

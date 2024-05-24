@@ -71,3 +71,11 @@ for i in S:
 
 solution2: logn
 two pointers
+
+Examine: The maximum-subarray problem
+=====================================
+MIT book pag.68
+solution1: try every possible pair of buy and sell dates in which the buy date precedes the sell date. A period of n days has (n, 2) such pairs of dates. Since (n, 2) is O(n2).
+
+Examine: The matrix multiplication problem
+==========================================
