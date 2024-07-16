@@ -2,9 +2,10 @@ import sys
 
 def search_recursive(A, n, key):
     if (n >= 0):
-        if A[n] == key:
+        if A[n] == key: #base case
             return n
         return search_recursive(A, n-1, key)
+    return None
 
 def insertion_sort(A):
     for j in range(2, len(A)):
