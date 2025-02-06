@@ -1,11 +1,18 @@
+This revision lists store the problems that I can not solve by the first try and can solve by a few weeks latter.
+Revision list 1 is for the problems which can not be solved by my tries by looking at the solutions.
+Revision list 2: Problem in the revision list 1 which can be solved by first try after one weeks.
+Revision list 3: Problem in the revision list 2 which can be solved by first try after one weeks.
+
 Pattern 1: Prefix Sum
-Revision list 1: Can not solve by first try
+Revision list 1:
 5 feb 2025
 https://leetcode.com/problems/range-sum-query-immutable/description/
 https://leetcode.com/problems/contiguous-array/description/
 https://leetcode.com/problems/subarray-sum-equals-k/description/
 
-Revision list 2: Can solve by first try after two few week
+Revision list 2:
+
+Revision list 3:
 
 Pattern 2: Two pointers
 Revision list 1:
