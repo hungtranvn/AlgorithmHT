@@ -1,0 +1,70 @@
+Pattern 1: Prefix Sum
+Revision list 1: Can not solve by first try
+5 feb 2025
+https://leetcode.com/problems/range-sum-query-immutable/description/
+https://leetcode.com/problems/contiguous-array/description/
+https://leetcode.com/problems/subarray-sum-equals-k/description/
+
+Revision list 2: Can solve by first try after two few week
+
+Pattern 2: Two pointers
+Revision list 1:
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+https://leetcode.com/problems/3sum/description/
+https://leetcode.com/problems/container-with-most-water/description/
+Revision list 2:
+
+Pattern 3: Sliding Window
+Revision list 1:
+https://leetcode.com/problems/maximum-average-subarray-i/description/
+https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+https://leetcode.com/problems/minimum-window-substring/description/
+Revision list 2:
+
+Pattern 4: Fast and Slow pointers
+Revision list 1:
+Revision list 2:
+
+Pattern 5: LinkedList in-place Reversal
+Revision list 1:
+Revision list 2:
+
+Pattern 6: Monotonic Stack
+Revision list 1:
+Revision list 2:
+
+Pattern 7: Top k elements
+Revision list 1:
+Revision list 2:
+
+Pattern 8: Overlapping Intervals
+Revision list 1:
+Revision list 2:
+
+Pattern 9: Modified Binary Search
+Revision list 1:
+Revision list 2:
+
+Pattern 10: Binary Tree Traversal
+Revision list 1:
+Revision list 2:
+
+Pattern 11: Depth-First Search
+Revision list 1:
+Revision list 2:
+
+Pattern 12: Breadth-First Search
+Revision list 1:
+Revision list 2:
+
+Pattern 13: Matrix Traversal
+Revision list 1:
+Revision list 2:
+
+Pattern 14: Backtracking
+Revision list 1:
+Revision list 2:
+
+Pattern 15: Dynamic Programming Patterns
+Revision list 1:
+Revision list 2:
