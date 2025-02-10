@@ -30,6 +30,8 @@ Revision list 2:
 
 Pattern 4: Fast and Slow pointers
 Revision list 1:
+https://leetcode.com/problems/linked-list-cycle/description/
+https://leetcode.com/problems/happy-number/description/
 Revision list 2:
 
 Pattern 5: LinkedList in-place Reversal
