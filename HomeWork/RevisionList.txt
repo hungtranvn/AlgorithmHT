@@ -77,3 +77,7 @@ Revision list 2:
 Pattern 15: Dynamic Programming Patterns
 Revision list 1:
 Revision list 2:
+
+
+
+https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews/
