@@ -32,14 +32,19 @@ Pattern 4: Fast and Slow pointers
 Revision list 1:
 https://leetcode.com/problems/linked-list-cycle/description/
 https://leetcode.com/problems/happy-number/description/
+https://leetcode.com/problems/find-the-duplicate-number/description/
 Revision list 2:
 
 Pattern 5: LinkedList in-place Reversal
 Revision list 1:
+https://leetcode.com/problems/reverse-linked-list/description/
+https://leetcode.com/problems/reverse-linked-list-ii/description/
+https://leetcode.com/problems/swap-nodes-in-pairs/description/
 Revision list 2:
 
 Pattern 6: Monotonic Stack
 Revision list 1:
+https://leetcode.com/problems/next-greater-element-i/description/
 Revision list 2:
 
 Pattern 7: Top k elements
